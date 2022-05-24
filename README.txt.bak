@@ -16,3 +16,10 @@ what if we want to write code for api's, do we have to rewrite everything? and i
 7. We can call notifications in events, currently we are using both notifications and events. just use events in repositery, and notifications in events.
 8. Its good idea of using form request instead of just using request 
 9. If using INNODB as database engine its good to lock row level transactions, what id we are inserting in multiple tables and last one return error. in that case we need to roll back all transactions.
+
+Code to write tests
+=====================
+3) App/Helpers/TeHelper.php method willExpireAt
+4) App/Repository/UserRepository.php, method createOrUpdate
+
+1. This one looks ok to me, we can use model fillable proerty instead of assigning each value.
